@@ -9,7 +9,9 @@ PASSWORD=`cat ${NEO_PASSWORD}`
 
 echo "test-------------"
 
-ls $ENV_DIR
+cat $ENV_DIR/NEO_PASSWORD
+cat $ENV_DIR/NEO_USERNAME
+cat $ENV_DIR/NEO_URL
 
 echo "test-------------"
 
