@@ -8,7 +8,11 @@ URL=`cat ${NEO_URL}`
 USERNAME=`cat ${NEO_USERNAME}`
 PASSWORD=`cat ${NEO_PASSWORD}`
 
-ls $ENV_DIR/PROJECT_PATH
+echo "test-------"
+
+ls $BUILD_DIR
+
+echo "test-------"
 
 echo "spring.neo4j.uri=${URL}" > ./src/main/application.properties
 
