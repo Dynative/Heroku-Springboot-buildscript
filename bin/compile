@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 
 BUILD_DIR=${1:-}
+ENV_DIR=${3:-}
 
 URL=`cat ${NEO_URL}`
 USERNAME=`cat ${NEO_USERNAME}`
 PASSWORD=`cat ${NEO_PASSWORD}`
+
+echo "test-------------"
+
+ls $ENV_DIR
+
+echo "test-------------"
 
 echo "spring.neo4j.uri=${URL}" > ${BUILD_DIR}/src/main/application.properties
 
