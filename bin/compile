@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-URL=`cat NEO_URL`
-USERNAME=`cat NEO_USERNAME`
-PASSWORD=`cat NEO_PASSWORD`
+URL=`cat ${NEO_URL}`
+USERNAME=`cat ${NEO_USERNAME}`
+PASSWORD=`cat ${NEO_PASSWORD}`
 
 echo "spring.neo4j.uri=${URL}" > ./src/main/application.properties
 
