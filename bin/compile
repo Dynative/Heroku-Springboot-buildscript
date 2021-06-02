@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+USERNAME=`cat NEO_USERNAME`
+PASSWORD=`cat NEO_PASSWORD`
+
+echo "spring.neo4j.uri=neo4j://3.16.89.42:7687" > ./src/main/application.properties
+
+echo "spring.neo4j.authentication.username=${USERNAME}" >> ./src/main/application.properties
+
+echo "spring.neo4j.authentication.password=${PASSWORD}" >> ./src/main/application.properties
