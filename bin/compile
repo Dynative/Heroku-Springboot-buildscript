@@ -7,8 +7,8 @@ URL=`cat ${ENV_DIR}/NEO_URL`
 USERNAME=`cat ${ENV_DIR}/NEO_USERNAME`
 PASSWORD=`cat ${ENV_DIR}/NEO_PASSWORD`
 
-echo "spring.neo4j.uri=${URL}" > ${BUILD_DIR}/src/main/application.properties
+echo "spring.neo4j.uri=${URL}" > ${BUILD_DIR}/src/main/resources/application.properties
 
-echo "spring.neo4j.authentication.username=${USERNAME}" >> ${BUILD_DIR}/src/main/application.properties
+echo "spring.neo4j.authentication.username=${USERNAME}" >> ${BUILD_DIR}/src/main/resources/application.properties
 
-echo "spring.neo4j.authentication.password=${PASSWORD}" >> ${BUILD_DIR}/src/main/application.properties
+echo "spring.neo4j.authentication.password=${PASSWORD}" >> ${BUILD_DIR}/src/main/resources/application.properties
